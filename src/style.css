@@ -1,0 +1,215 @@
+*{
+    color: white;
+}
+
+
+/* COMENTADO */
+.message{
+    padding: 20px;
+    /* background-color: rgba(0, 0, 0, 1); */
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 30px;
+
+    border: 1px solid red;
+
+}
+
+.message h2, h4{
+    color: #4d8cf4;
+
+}
+
+.background{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+/* COMENTADO */
+
+.App{
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h2{
+    display: block;
+
+    color: #4d8cf4;
+    margin-bottom: 20px;
+
+    text-shadow: 0px 5px 10px rgba(81, 143, 246, .2);
+
+
+    font-weight: bold;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    
+    background: linear-gradient(to bottom, #0f1319, #24252a);
+
+    margin-left: auto;
+    /* padding: 0 5%; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    align-self: flex-end;
+}
+
+.main{
+    max-width: 350px;
+    width: auto;
+
+    padding: 20px 20px 20px 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    transform: translateY(-10vh);
+
+    border-radius: 20px;
+    /* background-color: rgba(0, 0, 0, .3); */
+    /* background-color: rgba(255, 255, 255, .1); */
+
+}
+
+form label, button{
+    height: 42px;
+    max-width: 100%;
+
+    width: 100%;
+    font-size: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 8px;
+
+    margin-bottom: 15px;
+    padding: 0 0 0 10px;
+    
+    background-color: #1f2329;
+    color: #3e4247;
+
+    box-shadow: 0px 5px 10px rgb(0 0 0 / 20%);
+}
+
+svg {
+    font-size: 1.5em;
+    fill: #3e4247;
+
+    outline: transparent;
+    stroke: transparent;
+
+    cursor: pointer;
+}
+
+form input{
+    background: none;
+    border: none;
+
+    color: rgb(62, 66, 71);
+    padding: 0 10px;
+
+    font-size: 16px;
+
+    outline: none;
+
+
+    height: 42px;
+    width: 100%;
+}
+
+form input::placeholder{
+    color: #3e4247;
+}
+
+button{
+    margin: 20px 0;
+
+    cursor: pointer;
+
+    border: none;
+    outline: none;
+
+    background-color: rgb(81, 143, 246);
+    color: white;
+
+    transition: 200ms;
+    box-shadow: 0px 5px 10px rgb(81 143 246 / 20%);
+}
+
+button:hover{
+    letter-spacing: 1px;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+
+    /* font-size: 14px; */
+
+    margin: 0 auto;
+    
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
+}
+
+p a{
+    margin-left: 5px;
+    color: dodgerblue;
+}
+
+.background{
+    height: 100%;
+    width: 50%;
+
+    /* MOUNTAIN */
+    /* background-image: url(https://www.teahub.io/photos/full/131-1316809_dark-mountain-wallpaper-4k.jpg); */
+    
+    /* FOREST */
+    /* background-image: url(https://i.pinimg.com/originals/69/78/e3/6978e39aaa98547c707759226bc07dfc.jpg); */
+    
+    /* DOODLE */
+    background-image: url(https://wallpaperaccess.com/full/3204572.jpg);
+    
+    /* GLOBAL */
+    /* background-image: url(https://wallpaperaccess.com/full/1201536.jpg); */
+
+    /* BLUE NETWORK */
+    /* background-image: url(https://pixelz.cc/wp-content/uploads/2019/03/polygons-network-blue-wqhd-1440p-wallpaper.jpg); */
+
+    /* background-image: url(https://wallpaperaccess.com/full/2112.jpg); */
+
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px;
+}
+
+@media (max-width: 900px) {
+    .background{
+        width: 30%;
+    }
+}
+
+@media (max-width: 600px) {
+    .container{
+        width: 100%;
+    }
+    
+    .background{
+        display: none;
+    }
+}
