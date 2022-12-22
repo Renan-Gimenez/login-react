@@ -174,9 +174,6 @@ p a{
 .background{
     height: 100%;
     width: 50%;
-
-    /* MOUNTAIN */
-    /* background-image: url(https://www.teahub.io/photos/full/131-1316809_dark-mountain-wallpaper-4k.jpg); */
     
     /* FOREST */
     /* background-image: url(https://i.pinimg.com/originals/69/78/e3/6978e39aaa98547c707759226bc07dfc.jpg); */
@@ -184,13 +181,8 @@ p a{
     /* DOODLE */
     background-image: url(https://wallpaperaccess.com/full/3204572.jpg);
     
-    /* GLOBAL */
-    /* background-image: url(https://wallpaperaccess.com/full/1201536.jpg); */
-
     /* BLUE NETWORK */
     /* background-image: url(https://pixelz.cc/wp-content/uploads/2019/03/polygons-network-blue-wqhd-1440p-wallpaper.jpg); */
-
-    /* background-image: url(https://wallpaperaccess.com/full/2112.jpg); */
 
 
     background-size: cover;
