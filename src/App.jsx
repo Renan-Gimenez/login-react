@@ -1,55 +1,57 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import styled from 'styled-components';
+
+import firebase from './services/firebase.ts';
 import './style.css';
 
-// ICONS
-import { IoMdLock } from "react-icons/io";
-import { HiUser } from "react-icons/hi";
-import { FiUser } from "react-icons/fi";
+import { getFirestore, getDocs, collection } from 'firebase/firestore';
+import { useEffect, useState } from 'react';
 
-// COMPONENTES
-import Input from "./Components/Input";
-import Button from "./Components/Button";
-import Title from "./Components/Title";
+// PAGES
+import Page404 from './pages/Page404';
+import Base from './pages/Base';
+import LoginPage from './pages/LoginPage.tsx';
+import SignupPage from './pages/SignupPage';
+import MainPage from './pages/MainPage';
 
+const StyledApp = styled.div`
+  height: 100vh;
+  width: 100vw;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
-function App() {
+export const App = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [users, setUsers] = useState([]);
+  
+  // const db = getFirestore(firebaseApp);
+  // const useCollectionRef = collection(db, "users");
+
+  // useEffect(() => {
+  //   const getUsers = async () => {
+  //     const data = await getDocs(useCollectionRef);
+  //     console.log(data);
+  //   };
+  //   getUsers();
+  // },[]);
+
+  console.log("render")
 
   return (
-    <div className="App">
-
-      <div className='background'>
-        {/* <div className='message'>
-
-          <h2>welcome to the Webgram</h2>
-          <h4>Be peaceful and enjoy :)</h4>
-
-        </div> */}
-      </div>
-
-      <div className='container'>
-        <div className='main'>
-
-          <Title>Connect to your account and have fun ;)</Title>
-
-          {/* <form action='https://formsubmit.co/renangiimenez@gmail.com' method="POST"> */}
-          <form action='#' method="">
-
-            <Input icon={<HiUser/>} id="email" name="Email" type="email" placeholder="Email"/>
-
-            <Input icon={<IoMdLock/>} id="password" name="Password"  type="password" placeholder="Password"/>
-
-            {/* <input type='hidden' name='_next' value='http://elgoog.tk'></input>
-            <input type='hidden' name='_captcha' value='false'></input> */}
-
-            <Button>Login</Button>
-
-            <p className='span'>Don't have an account? <a href='#'>SignUp</a></p>
-          </form>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-export default App;
+    <StyledApp>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' exact element={<MainPage />} />
+          <Route path='/login' element={<Base middle={<LoginPage />} />} />
+          <Route path='/signup' element={<Base middle={<SignupPage />} />} />
+          <Route path='*' element={<Page404 />} />
+        </Routes>
+      </BrowserRouter>
+    </StyledApp>
+  )
+};
