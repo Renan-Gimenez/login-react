@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 
 import { auth } from '../services/firebase.ts';
 
-import config from "../config.json";
-
 const StyledMainPage = styled.div`
     height: 100vh;
     width: 100vw;
@@ -71,9 +69,9 @@ export default function MainPage(props) {
             <StyledInfo>
                 <h1>User's info:</h1>
                 <span>----------</span>
-                <p>Name: {config.username}</p>
-                <p>Email: {config.email}</p>
-                <p>Uid: {config.uid}</p>
+                <p>Name: {null}</p>
+                <p>Email: {null}</p>
+                <p>Uid: {null}</p>
             </StyledInfo>
 
             <Link to="/login">GO TO MENU</Link>
