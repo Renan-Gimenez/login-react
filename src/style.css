@@ -2,43 +2,59 @@
     color: white;
 }
 
+.or-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.or-div span {
+    margin: 0 10px;
+}
+
+.barra {
+    height: 1px;
+    width: 100%;
+
+    background-color: white;
+}
 
 /* COMENTADO */
-.message{
-    padding: 20px;
+/* .message{
+    padding: 20px; */
     /* background-color: rgba(0, 0, 0, 1); */
-    background-color: rgba(255, 255, 255, .2);
+    /* background-color: rgba(255, 255, 255, .2);
     border-radius: 30px;
 
     border: 1px solid red;
 
-}
+} */
 
-.message h2, h4{
+/* .message h2, h4{
     color: #4d8cf4;
 
-}
+} */
 
-.background{
+/* .background{
     display: flex;
 
     justify-content: center;
     align-items: center;
     text-align: center;
 
-}
+} */
 /* COMENTADO */
 
-.App{
+/* .App{
     height: 100vh;
     width: 100vw;
 
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
-.container h2{
+/* .container h2{
     display: block;
 
     color: #4d8cf4;
@@ -48,43 +64,44 @@
 
 
     font-weight: bold;
-}
+} */
 
-.container{
+/* .container{
     height: 100%;
     width: 100%;
     
     background: linear-gradient(to bottom, #0f1319, #24252a);
 
-    margin-left: auto;
+    margin-left: auto; */
     /* padding: 0 5%; */
     
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     
     align-self: flex-end;
-}
+} */
 
-.main{
+/* .main{
     max-width: 350px;
-    width: auto;
+    width: 100%;
 
     padding: 20px 20px 20px 20px;
 
     display: flex;
     flex-direction: column;
 
-    transform: translateY(-10vh);
+    transform: translateY(-5vh);
 
-    border-radius: 20px;
+    border-radius: 20px; */
+
     /* background-color: rgba(0, 0, 0, .3); */
     /* background-color: rgba(255, 255, 255, .1); */
 
-}
+/* } */
 
-form label, button{
+/* form label{
     height: 42px;
     max-width: 100%;
 
@@ -104,7 +121,7 @@ form label, button{
     color: #3e4247;
 
     box-shadow: 0px 5px 10px rgb(0 0 0 / 20%);
-}
+} */
 
 svg {
     font-size: 1.5em;
@@ -116,7 +133,7 @@ svg {
     cursor: pointer;
 }
 
-form input{
+/* form input{
     background: none;
     border: none;
 
@@ -130,13 +147,19 @@ form input{
 
     height: 42px;
     width: 100%;
-}
+} */
 
-form input::placeholder{
+/* form input::placeholder{
     color: #3e4247;
-}
+} */
 
-button{
+/* input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+} */
+
+/* button{
     margin: 20px 0;
 
     cursor: pointer;
@@ -153,7 +176,7 @@ button{
 
 button:hover{
     letter-spacing: 1px;
-}
+} */
 
 p{
     display: flex;
@@ -171,32 +194,32 @@ p a{
     color: dodgerblue;
 }
 
-.background{
+/* .background{
     height: 100%;
-    width: 50%;
+    width: 50%; */
     
     /* FOREST */
     /* background-image: url(https://i.pinimg.com/originals/69/78/e3/6978e39aaa98547c707759226bc07dfc.jpg); */
     
     /* DOODLE */
-    background-image: url(https://wallpaperaccess.com/full/3204572.jpg);
+    /* background-image: url(https://wallpaperaccess.com/full/3204572.jpg); */
     
     /* BLUE NETWORK */
     /* background-image: url(https://pixelz.cc/wp-content/uploads/2019/03/polygons-network-blue-wqhd-1440p-wallpaper.jpg); */
 
 
-    background-size: cover;
+    /* background-size: cover;
     background-repeat: no-repeat;
     background-position: 0px;
-}
+} */
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
     .background{
         width: 30%;
     }
-}
+} */
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .container{
         width: 100%;
     }
@@ -204,4 +227,4 @@ p a{
     .background{
         display: none;
     }
-}
+} */
